@@ -1,0 +1,651 @@
+:root {
+
+    --color-amarillo: yellow;
+    --color-azul: blue;
+    --color-rojo: red;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'open sans';
+}
+
+                            /* Header */
+
+.barra-superior {
+
+    display: inline-block;
+    background: #0097e6;
+    width: 100%;
+    height: 100px;
+    z-index: 300;
+}
+
+nav > ul {
+
+    list-style: none;
+}
+
+header nav ul li {
+
+    float: left;
+}
+
+header nav ul li a {
+
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+header nav ul li a:hover {
+
+    background: darkblue;
+    color: white;
+}
+
+header nav ul li a:active {
+
+    background: rgb(2, 2, 68);
+    color: white;
+}
+
+.menu {
+
+    display: flex;
+    position: relative;
+    right: 30px;
+    justify-content: flex-end;
+    top: 15px;
+}
+
+.logo img {
+
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    /* font-size: 22px; */
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transform: rotate(70deg);
+    /* overflow: hidden; */
+}
+
+
+                        /* Slider header */
+
+.slide-contenedor {
+
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.miSlider img {
+
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 1s;
+}
+
+.direcciones {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.direcciones a {
+
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.direcciones a:hover {
+
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.barras {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.barra {
+
+    cursor: pointer;
+    height: 2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.active {
+
+    background-color: #e74c3c;
+}
+
+.fade {
+
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+
+    from {
+        opacity: .2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+                        /* Sobre-mi */
+
+.Sobre-mi {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.foto {
+
+    width: 40%;
+    height: 300px;
+    background: #76abd1;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.foto > img {
+
+    width: 290px;
+    height: 300px;
+}
+
+.texto-s {
+
+    background: #eee8e8;
+    width: 60%;
+    height: 300px;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.titulo-s {
+
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+
+                            /* Valoes */
+
+.caja-padre {
+
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    display: flex;
+}
+
+.title {
+
+    text-align: center;
+    font-size: 30px;
+    color: #c9bdbd;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card {
+
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+
+    transform: translateY(-15px);
+    box-shadow: 0 12 16 rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4 {
+
+    font-weight: 600;
+}
+
+.container .card p {
+
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container a {
+
+    font-weight: 500;
+    text-decoration: none;
+    color: #3898db;
+}
+
+.tarjetas {
+
+    margin-top: 30px;
+}
+
+                        /* Trayectoria */
+
+.trayectoria {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.enmanuel {
+
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;    
+    box-shadow: 0px 1px 4px 0px black;
+}
+
+.enmanuel > img {
+
+    position: relative;
+    top: -120px;
+
+}
+
+.centro {
+
+    text-align: center;
+}
+
+.cargos {
+
+    margin-top: 60px;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+
+.espacio {
+
+    padding-bottom: 10px;
+}
+
+                        /* objetivos */
+
+
+
+
+.contenedor {
+
+    width: 100%;
+    margin: auto;
+}
+
+
+.objetivos-cont {
+
+    display: flex;
+    justify-content: space-between;
+    background: #f7f4f4;
+    padding: 50px 20px;
+}
+
+.objetivos-ind {
+
+    width: 28%;
+    text-align: center;
+}
+
+.objetivos-ind img {
+
+    width: 90%;
+}
+
+.tamaño {
+
+    width: 200px;
+    height: 200px;
+}
+
+
+.objetivos-ind h3 {
+
+    margin: 10px 0;
+}
+
+.objetivos-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.amarillo {
+
+    background-color: var(--color-amarillo);
+}
+
+.azul {
+
+    background-color: var(--color-azul);
+}
+
+.rojo {
+
+    background-color: var(--color-rojo);
+}
+
+                            /* Footer */
+
+footer {
+
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us {
+
+    width: 40%;
+    color: #fff;
+    text-align: center;
+}
+
+.brand {
+
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.brand + p {
+
+    font-weight: 400;
+}
+
+.social-media {
+
+    width: 30%;
+    display: flex;
+    float: left;
+}
+
+.social-media-icon {
+
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.social-media-icon:hover {
+
+    background: white;
+    color: #764ba2;
+}
+
+.social-media-icon i {
+
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.linea {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+                   /* Responsive */
+
+@media screen and (max-width:375px) {
+
+    .barra-superior {
+
+        width: 100%;
+        background: #e74c3c;
+    }
+
+    .logo {
+
+        display: none;
+    }
+
+    .menu {
+
+        display: flex; 
+        position: relative;
+        right: 0px;
+    }
+
+    header nav ul li a {
+
+        display: block;
+        padding: 30px 8px;
+    }
+
+    .slide-contenedor {
+
+        width: 100%;
+        height: 260px;
+    }
+
+    .Sobre-mi {
+
+        margin-top: -5px;
+        margin-bottom: 0;
+    }
+
+    .foto {
+
+        display: none;
+    }
+
+    .texto-s {
+
+        background: #eee8e8;
+        width: 100%;
+        height: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        margin-top: -20px;
+    }
+    
+    .titulo-s {
+    
+        display: none;
+    }
+
+    .title {
+        
+        margin-top: -25px;
+        margin-bottom: 35px;
+    }
+
+    .caja-padre {
+
+        flex-wrap: wrap;
+
+    }
+
+    .enmanuel {
+
+        display: none;
+    }
+
+
+    .contenedor {
+
+        display: flex;
+
+    }
+
+    .objetivos-cont {
+
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .objetivos-ind {
+
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .objetivos-ind h3 {
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 5px 0px ;
+    }
+    
+    .objetivos-ind p {
+        
+        width: 90%;
+        margin: auto; 
+    }
+
+    .footer-content {
+
+        justify-content: center;
+    }
+
+    .social-media {
+
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon {
+
+        margin-left: 0px;
+    }
+
+    .social-media i {
+
+        margin-left: 0;
+    }
+
+    .contact-us {
+
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .resta {
+
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .cargos {
+
+
+        margin-top: 30px;
+    }
+
+    .trayectoria {
+
+        height: 230px;       
+    }
+
+}

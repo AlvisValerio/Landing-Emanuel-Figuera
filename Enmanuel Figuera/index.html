@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <title> Enmanuel-Figuera </title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="barra-superior">
+
+            <div class="logo">
+                <img src="img/descargar.png" alt="logo" title="logo">
+            </div>
+
+            <nav class="menu">
+
+                <ul>
+                    <li> <a href="#"> Inicio </a> </li>
+                    <li> <a href="#"> Sobre mi </a> </li>
+                    <li> <a href="#"> Valores </a> </li>
+                    <li> <a href="#"> Trayectoria </a> </li>
+                    <li> <a href="#"> objetivos </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/5.jpg" alt="">
+            </div>
+
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+                <span class="barra" onclick="posicionSlide(4)"></span>
+                <span class="barra" onclick="posicionSlide(5)"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h3 class="title"> Sobre mi </h3>
+
+            <div class="Sobre-mi">
+
+                <div class="foto">
+                    <img src="img/quien.jpg" alt="Enmanuel" >
+                </div>
+
+                <div class="texto-s">
+
+                    <h4 class="titulo-s"> Quien Soy </h4> 
+
+                    <p> Soy un joven Venezolano y ciudadano de Portuguesa, formo parte del 
+                        equipo de Vente Venezuela, partido de ciudadanos que busca formar
+                        un pais libre donde podamos vivir, trabajar, emprender y formar
+                        futuro en libertad.
+                    </p>
+                            <br>
+                    <p> Mi trabajo es consolidar el liberalismo como modelo politico para la
+                        reconstruccion de Venezuela al igual que crear politicas publicas
+                        que conviertan a Portuguesa en un estado de vanguardia en Venezuela.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tarjetas">
+
+            <h3 class="title resta"> Valores </h3>
+
+            <div class="caja-padre">
+
+                <div class="container">
+
+                    <div class="card">
+                        <img src="img/1.jpg" alt="Enmanuel-Figuera">
+
+                        <h4> Vida </h4>
+
+                        <p> Defensor de la vida como derecho natural de la persona de manera
+                            al igual que su libertad individual. </p>
+
+                        <a href="#"> leer mas </a>
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="card">
+                        <img src="img/2.jpg" alt="Enmanuel-Figuera">
+
+                        <h4> Libertad </h4>
+
+                        <p> Creo en la libertad por consiguiente en el liberalismo
+                            corriente de pensamiento que busca rescatar la libertad humana </p>
+
+                        <a href="#"> leer mas </a>
+
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="card">
+                        <img src="img/3.jpg" alt="Enmanuel-Figuera">
+
+                        <h4> Propiedad </h4>
+
+                        <p> Defensor de la propiedad privada y del emprendimient como forma de generar riqueza
+                            que beneficie a las personas. </p>
+
+                        <a href="#"> leer mas </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h3 class="title resta"> Trayectoria </h3>
+
+            <div class="trayectoria">
+
+                <div class="cargos">
+
+                    <h4 class="centro"> Cargos Ocupados </h4> <br>
+
+                    <ol>
+                        <li class="espacio"> Cordinador de Comunicaciones Vente Joven Guanare</li>
+                        <li class="espacio"> Cordinador de Organizacion Vente Joven </li>
+                        <li class="espacio"> Coordinador de Vente Joven Portuguesa </li>
+                        <li class="espacio"> Miembro del Y&D </li>
+                        <li class="espacio"> Redactor de Derecha Diario y Llanero Digital </li>
+                    </ol>
+                </div>
+
+                <div class="enmanuel">
+                    <img src="img/t.jpg" alt="Enmanuel-Figuera" width="500" height="600">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2 class="title"> Objetivos </h2>
+
+            <div class="contenedor">
+
+                <div class="objetivos-cont">
+
+                    <div class="objetivos-ind">
+
+                        <img src="img/qa.jpg" alt="" class="tamaño" >
+
+                        <h3 class="mini-caja amarillo"> Libertad de Venezuela </h3>
+
+                        <p> 
+                            Mi objetivo principal es alcanzar la libertad del pais
+                            por medio de la lucha democratica que restablezca el estado
+                            de derecho y libertad en Venezuela al igual que luchar en contra
+                            del socialismo.
+                        </p>
+
+                    </div>
+
+                    <div class="objetivos-ind">
+
+                        <img src="img/k.jpg" alt="" class="tamaño" >
+
+                        <h3 class="mini-caja azul"> Construir un pais prospero </h3>
+
+                        <p>
+                             Como politico la vision que tengo es construir un pais prospero 
+                            bajo una economia y sociedad basada en el liberalismo, la defensa
+                            de la propiedad pivada y la inversion al igual que el desarrollo 
+                            industrial, turistico, cientifico y tecnologico.
+                        </p>
+
+                    </div>
+
+                    <div class="objetivos-ind">
+
+                        <img src="img/w.jpg" alt="" class="tamaño" >
+
+                        <h3 class="mini-caja rojo"> Defender la libertad </h3>
+
+                        <p>
+                            Como fiel defensor de la libetad en todos sus sentidos
+                            me opongo a toda ideologia y forma de totalitarismo que atente en contra
+                            de la libertad en el mundo, ejemplo de esto es el comunismo y el socialismo
+                            al igual que sus variantes en todo el mundo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <h2 class="brand"> Enmanuel Figuera </h2>
+
+                <p> Comprometido con la libertad </p>
+            </div>
+
+            <div class="social-media">
+
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="linea"></div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
